@@ -22,6 +22,9 @@ public class User extends Bean{
 	
 	/**密码*/
 	private String userPass;
+	
+	/**角色id*/
+	private String roleId;
 
 	public String getUserName() {
 		return userName;
@@ -38,7 +41,13 @@ public class User extends Bean{
 	public void setUserPass(String userPass) {
 		this.userPass = userPass;
 	}
-	
-	
+
+	public String getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(String roleId) {
+		this.roleId = roleId;
+	}
 	
 }

@@ -21,6 +21,12 @@ public class Course extends Bean{
 	
 	/**教程内容*/
 	private String CourseContent;
+	
+	/**发布人id*/
+	private String userId;
+	
+	/**课程类别id*/
+	private String typeId;
 
 	public String getCourseTitle() {
 		return courseTitle;
@@ -37,5 +43,23 @@ public class Course extends Bean{
 	public void setCourseContent(String courseContent) {
 		CourseContent = courseContent;
 	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(String typeId) {
+		this.typeId = typeId;
+	}
+	
+	
 	
 }

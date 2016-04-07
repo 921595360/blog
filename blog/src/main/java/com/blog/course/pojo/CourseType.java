@@ -20,6 +20,9 @@ public class CourseType extends Bean{
 	private String parentId;
 	
 	private String typeName;
+	
+	/**发布人id*/
+	private String userId;
 
 	public String getParentId() {
 		return parentId;
@@ -35,6 +38,14 @@ public class CourseType extends Bean{
 
 	public void setTypeName(String typeName) {
 		this.typeName = typeName;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 	
 	
