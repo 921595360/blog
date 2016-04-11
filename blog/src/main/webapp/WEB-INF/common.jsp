@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
-<c:set var="staticPath" value="http://static.carp.mopaasapp.com"/>
+<c:set var="staticPath" value="${ctx }/blog"/>
 
 <script type="text/javascript">
   var ctx = "${ctx }";

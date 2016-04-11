@@ -320,7 +320,7 @@
                     <div class="clear"></div>
 
                     <div class="prg_content">
-                      <img src="${staticPath}/http://placehold.it/100x100" width="100" height="100" alt="img">
+                      <img src="http://placehold.it/100x100" width="100" height="100" alt="img">
 
                       <div class="text">
                         Lorem ipsum dolor sit amet, consectetur
