@@ -4,7 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  
+
   <context-param>
       <param-name>basePackage</param-name>
       <param-value>com.blog</param-value>
@@ -29,5 +29,11 @@
   	<servlet-name>DispatcherServlet</servlet-name>
   	<url-pattern>/</url-pattern>
   </servlet-mapping>
+    
+  <welcome-file-list>
+      <welcome-file>/WEB-INF/index.jsp</welcome-file>
+  </welcome-file-list>
+
+
   
 </web-app>

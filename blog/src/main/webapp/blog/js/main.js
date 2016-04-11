@@ -44,6 +44,7 @@ jQuery(document).ready(function($) {
         $('html, body').animate({scrollTop: $('h2.resp-accordion').offset().top - 50}, 600);
     });
 
+   /*绑定左侧菜单事件*/
     $(".resp-tabs-list li").click(function() {
         $(this).find(".icon_menu").addClass("icon_menu_active");
         $(".resp-tabs-list li").not(this).find(".icon_menu").removeClass("icon_menu_active");
