@@ -16,14 +16,14 @@ jQuery(document).ready(function($) {
 
     // layout Type				
     if ($.cookie('bg_type') != null) {
-
+        
         if ($.cookie('bg_type') == 'bg_color'){
             $('#s1').attr('checked', true);
-            $("#cb_slideshow" ).css("display", "none");
-        }else{
+			$("#cb_slideshow" ).css("display", "none");
+		}else{
             $('#s2').attr('checked', true);
-            $("#cb_slideshow" ).css("display", "block" );
-        }
+			$("#cb_slideshow" ).css("display", "block" );
+		}
     }
 
     // type profile				
@@ -158,8 +158,8 @@ jQuery(document).ready(function($) {
         $.cookie('bg_type', 'bg_color');
         return false;
     });
-
-    $("#s2").on('change', function() {
+	
+	$("#s2").on('change', function() {
         $("#cb_slideshow").css("display", "block");
         $.cookie('bg_type', 'bg_slider');
         return false;
