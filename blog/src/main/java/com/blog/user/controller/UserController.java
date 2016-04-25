@@ -1,6 +1,9 @@
 package com.blog.user.controller;
 
+import com.blog.user.pojo.User;
+import com.blog.user.service.UserService;
 import com.silence.web.spring_min.ModelAndView;
+import com.silence.web.spring_min.anotation.Autowired;
 import com.silence.web.spring_min.anotation.Controller;
 import com.silence.web.spring_min.anotation.RequestMapping;
 
@@ -13,23 +16,13 @@ import java.io.IOException;
 @RequestMapping("/user")
 public class UserController {
 
-	@RequestMapping("login.html")
-	public void login(HttpServletRequest request,HttpServletResponse response){
-		/*try {
-			request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request,response);
-		} catch (ServletException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}*/
-		try {
-			request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request,response);
-		} catch (ServletException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	@Autowired
+	private UserService userService;
 
+
+	@RequestMapping("login.html")
+	public void login(String userName,String userPass){
+		User user=userService.login(userName,userPass);
 
 	}
 }
