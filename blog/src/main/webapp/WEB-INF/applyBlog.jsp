@@ -1,261 +1,183 @@
 <%@ include file="common.jsp" %>
+<%@ page contentType="text/html;charset=utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
     <title>Blog - Eldun Malosanu</title>
     <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Bootstrap -->
-    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="${staticPath}/js/bootstrap/respond.min.js"></script>
-    <script src="${staticPath}/js/bootstrap/html5shiv.js"></script>
-    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <!-- 配置文件 -->
+    <script type="text/javascript" charset="utf-8" src="${staticPath}/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" charset="utf-8" src="${staticPath}/ueditor/ueditor.all.min.js"></script>
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="${staticPath}/ueditor/lang/zh-cn/zh-cn.js"></script>
 
+    <style type="text/css">
+        div{
+            width:100%;
+        }
+    </style>
 </head>
-<body class="page-blog">
-<div class="container" id="container">
+<body>
+<div>
+    <h1>完整demo</h1>
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+</div>
+<div id="btns">
+    <div>
+        <button onclick="getAllHtml()">获得整个html的内容</button>
+        <button onclick="getContent()">获得内容</button>
+        <button onclick="setContent()">写入内容</button>
+        <button onclick="setContent(true)">追加内容</button>
+        <button onclick="getContentTxt()">获得纯文本</button>
+        <button onclick="getPlainTxt()">获得带格式的纯文本</button>
+        <button onclick="hasContent()">判断是否有内容</button>
+        <button onclick="setFocus()">使编辑器获得焦点</button>
+        <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
+        <button onmousedown="setblur(event)" >编辑器失去焦点</button>
 
-    <div class="row top">
-        <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-            <div class="name"><a href="index.html">Eldun Malosanu</a></div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-5 col-right">
-            <nav>
-                <ul class="list-inline" id="menu">
-                    <li>
-                        <a href="${ctx}/index.html">work</a>
-                    </li>
-                    <li class=" active">
-                        <a href="${ctx}/blog.html">blog</a>
-                    </li>
-                    <li>
-                        <a href="${ctx}/contact.html">contact</a>
-                    </li>
-                    <li class="last">
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"></a>
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
-    <div class="row bottom">
-        <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-            <div>
-                <section>
-
-                    <!--article image-->
-                    <img src="${staticPath}/img/blog/banner-article-1.jpg" alt="" class="img-responsive">
-
-                    <!--article title-->
-                    <h1>my last experiments about mobile design</h1>
-                    <h1 class="spacer">___</h1>
-
-                    <!--article date-->
-                    <p class="article-date">09 sep 2013</p>
-
-                    <!--article tags-->
-                    <p class="article-tags">
-                        <a href="#">illustration</a> ,
-                        <a href="#">graphic design</a> ,
-                        <a href="#">website</a>
-                    </p>
-
-                    <!--article content-->
-                    <p class="article-description"><strong>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</strong>
-                        <br><br>
-                        Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.
-                        <br><br>
-                        Soleo saepe ante oculos ponere, idque libenter crebris usurpare sermonibus, omnis nostrorum imperatorum, omnis exterarum gentium potentissimorumque populorum, omnis clarissimorum regum res gestas, cum tuis nec contentionum magnitudine nec numero proeliorum nec varietate regionum nec celeritate conficiendi nec dissimilitudine bellorum posse conferri; nec vero disiunctissimas terras citius passibus cuiusquam potuisse peragrari, quam tuis non dicam cursibus, sed victoriis lustratae sunt.
-                        <br><br>
-                        Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque et histrionici gestus instrumenta non levia.
-                        <br><br>
-                        Vide, quantum, inquam, fallare, Torquate. oratio me istius philosophi non offendit; nam et complectitur verbis, quod vult, et dicit plane, quod intellegam; et tamen ego a philosopho, si afferat eloquentiam, non asperner, si non habeat, non admodum flagitem. re mihi non aeque satisfacit, et quidem locis pluribus. sed quot homines, tot sententiae; falli igitur possumus.
-                        <br><br>
-                        Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non? Nam et non sortiri absurdum est, et, quod sortitus sis, non habere. Proficiscetur paludatus? Quo? Quo pervenire ante certam diem non licebit. ianuario, Februario, provinciam non habebit; Kalendis ei denique Martiis nascetur repente provincia.
-                    </p>
-
-                    <!--navigation-->
-                    <ul class="pager">
-                        <li class="previous"><a href="#">&lt; Prev</a></li>
-                        <li class="next disabled"><a href="#">Next &gt;</a></li>
-                    </ul>
-                    <hr>
-
-                    <!--comments-->
-                    <h1>Comment</h1>
-                    <h1 class="spacer">___</h1>
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar.jpg" alt="miniature-comment" width="48">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">John doe</h3>
-                            <p class="comment-date">09 sep 2013</p>
-                            <p class="comment-content">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius. Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non?
-                        </div>
-                    </div>
-                    <hr class="sm">
-                    <div class="media">
-                        <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar-2.jpg" alt="miniature-comment" width="48">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Sandra Lima</h3>
-                            <p class="comment-date">17 sep 2013</p>
-                            <p class="comment-content">Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.
-                        </div>
-                    </div>
-                    <hr class="sm">
-                    <h3>Write one</h3>
-                    <div class="panel panel-default contact btn-footer">
-                        <div class="panel-body">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label for="blogEmail">Email address / Name</label>
-                                    <input type="email" class="form-control" id="blogEmail">
-                                </div>
-                                <div class="form-group">
-                                    <label for="blogMessage">Message</label>
-                                    <textarea class="form-control" rows="5" id="blogMessage"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="panel-footer">
-                            <a class="btn btn-grey btn-lg btn-block">Send</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <!--share-->
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <h3 class="share">Share</h3>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-mail.png" alt="Mail"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="Facebook"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="Twitter"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-google.png" alt="Google plus"></a>
-                        </div>
-                    </div>
-
-                </section>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-5 col-right">
-            <div id="scroll-shadow"></div>
-            <h1 class="visible-xs section-header" id="posts-list">Last articles</h1>
-            <h1 class="visible-xs text-center spacer">___</h1>
-
-            <section class="blog">
-
-                <!--article-->
-                <div class="media">
-                    <a class="pull-left" href="#">
-
-                        <!--article image-->
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-1.png" alt="miniature-article">
-
-                    </a>
-                    <div class="media-body">
-
-                        <!--article title-->
-                        <h4 class="media-heading">10 Podcasts About Web Design
-                            <span class="label label-default">New</span></h4>
-
-                        <!--article category-->
-                        <p class="article-category">Graphic design</p>
-
-                        <!--article date-->
-                        <p class="article-date">09 sep 2013</p>
-
-                        <!--article short description-->
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius...view more</p>
-
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-7.png" alt="miniature-article">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Who Uses Graphic Designs</h4>
-                        <p class="article-category">Graphic design</p>
-                        <p class="article-date">05 sep 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-3.png" alt="miniature-article">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">How Responsive is awesome</h4>
-                        <p class="article-category">Web design</p>
-                        <p class="article-date">02 sep 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-4.png" alt="miniature-article">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">The Complete Guide to Websites</h4>
-                        <p class="article-category">Web design</p>
-                        <p class="article-date">30 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-2.png" alt="miniature-article">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">5 Ideas for your Logotypes</h4>
-                        <p class="article-category">Logotype</p>
-                        <p class="article-date">23 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
-                    </div>
-                </div>
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-6.png" alt="miniature-article">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">The Only Responsive Resources</h4>
-                        <p class="article-category">Web design</p>
-                        <p class="article-date">10 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
-                    </div>
-                </div>
-            </section>
-            <a class="btn btn-default btn-lg btn-block load-more">Load more</a>
-            <a class="btn btn-block scroll-top visible-xs">
-                <img src="${staticPath}/img/icon/icon-chevron.png" alt="Scroll top">
-            </a>
-        </div>
+    <div>
+        <button onclick="getText()">获得当前选中的文本</button>
+        <button onclick="insertHtml()">插入给定的内容</button>
+        <button id="enable" onclick="setEnabled()">可以编辑</button>
+        <button onclick="setDisabled()">不可编辑</button>
+        <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
+        <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
+        <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
     </div>
+
+    <div>
+        <button onclick="getLocalData()" >获取草稿箱内容</button>
+        <button onclick="clearLocalData()" >清空草稿箱</button>
+    </div>
+
+</div>
+<div>
+    <button onclick="createEditor()">
+        创建编辑器</button>
+    <button onclick="deleteEditor()">
+        删除编辑器</button>
 </div>
 
-<script src="${staticPath}/js/jquery.js"></script>
+<script type="text/javascript">
 
-<!-- FASTCLICK -->
-<script src="${staticPath}/js/plugins/fastclick/fastclick.js"></script>
-<!-- SMOOTH SCROLL -->
-<script src="${staticPath}/js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
-<!-- MIXITUP -->
-<script src="${staticPath}/js/plugins/mixitup/jquery.mixitup.min.js"></script>
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
 
-<script src="${staticPath}/js/main.js"></script>
+
+    function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+</script>
 </body>
 </html>

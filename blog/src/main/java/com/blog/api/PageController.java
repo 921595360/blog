@@ -30,4 +30,7 @@ public class PageController {
     public ModelAndView applyBlog(){
         return new ModelAndView("/WEB-INF/applyBlog.jsp");
     }
+
+
+
 }
