@@ -5,13 +5,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Blog - Eldun Malosanu</title>
-    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <!-- Bootstrap -->
-    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen">
+    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +40,8 @@
                         <a href="${ctx}/contact.html">contact</a>
                     </li>
                     <li class="last">
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"></a>
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"/></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"/></a>
                     </li>
                 </ul>
             </nav>
@@ -53,7 +53,7 @@
                 <section>
 
                     <!--article image-->
-                    <img src="${staticPath}/img/blog/banner-article-1.jpg" alt="" class="img-responsive">
+                    <img src="${staticPath}/img/blog/banner-article-1.jpg" alt="" class="img-responsive"/>
 
                     <!--article title-->
                     <h1>my last experiments about mobile design</h1>
@@ -71,15 +71,15 @@
 
                     <!--article content-->
                     <p class="article-description"><strong>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum, insontium caedibus fecit victoriam luctuosam.</strong>
-                        <br><br>
+                        <br/><br/>
                         Nec piget dicere avide magis hanc insulam populum Romanum invasisse quam iuste. Ptolomaeo enim rege foederato nobis et socio ob aerarii nostri angustias iusso sine ulla culpa proscribi ideoque hausto veneno voluntaria morte deleto et tributaria facta est et velut hostiles eius exuviae classi inpositae in urbem advectae sunt per Catonem, nunc repetetur ordo gestorum.
-                        <br><br>
+                        <br/><br/>
                         Soleo saepe ante oculos ponere, idque libenter crebris usurpare sermonibus, omnis nostrorum imperatorum, omnis exterarum gentium potentissimorumque populorum, omnis clarissimorum regum res gestas, cum tuis nec contentionum magnitudine nec numero proeliorum nec varietate regionum nec celeritate conficiendi nec dissimilitudine bellorum posse conferri; nec vero disiunctissimas terras citius passibus cuiusquam potuisse peragrari, quam tuis non dicam cursibus, sed victoriis lustratae sunt.
-                        <br><br>
+                        <br/><br/>
                         Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur et bybliothecis sepulcrorum ritu in perpetuum clausis organa fabricantur hydraulica, et lyrae ad speciem carpentorum ingentes tibiaeque et histrionici gestus instrumenta non levia.
-                        <br><br>
+                        <br/><br/>
                         Vide, quantum, inquam, fallare, Torquate. oratio me istius philosophi non offendit; nam et complectitur verbis, quod vult, et dicit plane, quod intellegam; et tamen ego a philosopho, si afferat eloquentiam, non asperner, si non habeat, non admodum flagitem. re mihi non aeque satisfacit, et quidem locis pluribus. sed quot homines, tot sententiae; falli igitur possumus.
-                        <br><br>
+                        <br/><br/>
                         Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non? Nam et non sortiri absurdum est, et, quod sortitus sis, non habere. Proficiscetur paludatus? Quo? Quo pervenire ante certam diem non licebit. ianuario, Februario, provinciam non habebit; Kalendis ei denique Martiis nascetur repente provincia.
                     </p>
 
@@ -88,40 +88,40 @@
                         <li class="previous"><a href="#">&lt; Prev</a></li>
                         <li class="next disabled"><a href="#">Next &gt;</a></li>
                     </ul>
-                    <hr>
+                    <hr/>
 
                     <!--comments-->
                     <h1>Comment</h1>
                     <h1 class="spacer">___</h1>
                     <div class="media">
                         <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar.jpg" alt="miniature-comment" width="48">
+                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar.jpg" alt="miniature-comment" width="48"/>
                         </a>
                         <div class="media-body">
                             <h3 class="media-heading">John doe</h3>
                             <p class="comment-date">09 sep 2013</p>
-                            <p class="comment-content">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius. Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non?
+                            <p class="comment-content"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius. Fuerit toto in consulatu sine provincia, cui fuerit, antequam designatus est, decreta provincia. Sortietur an non?
                         </div>
                     </div>
-                    <hr class="sm">
+                    <hr class="sm"/>
                     <div class="media">
                         <a class="pull-left" href="#">
-                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar-2.jpg" alt="miniature-comment" width="48">
+                            <img class="media-object img-circle" src="${staticPath}/img/blog/avatar-2.jpg" alt="miniature-comment" width="48"/>
                         </a>
                         <div class="media-body">
                             <h3 class="media-heading">Sandra Lima</h3>
                             <p class="comment-date">17 sep 2013</p>
-                            <p class="comment-content">Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.
+                            <p class="comment-content"/>Montius nos tumore inusitato quodam et novo ut rebellis et maiestati recalcitrantes Augustae per haec quae strepit incusat iratus nimirum quod contumacem praefectum, quid rerum ordo postulat ignorare dissimulantem formidine tenus iusserim custodiri.
                         </div>
                     </div>
-                    <hr class="sm">
+                    <hr class="sm"/>
                     <h3>Write one</h3>
                     <div class="panel panel-default contact btn-footer">
                         <div class="panel-body">
                             <form role="form">
                                 <div class="form-group">
                                     <label for="blogEmail">Email address / Name</label>
-                                    <input type="email" class="form-control" id="blogEmail">
+                                    <input type="email" class="form-control" id="blogEmail"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="blogMessage">Message</label>
@@ -133,7 +133,7 @@
                             <a class="btn btn-grey btn-lg btn-block">Send</a>
                         </div>
                     </div>
-                    <hr>
+                    <hr/>
 
                     <!--share-->
                     <div class="row">
@@ -141,10 +141,10 @@
                             <h3 class="share">Share</h3>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-right">
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-mail.png" alt="Mail"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="Facebook"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="Twitter"></a>
-                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-google.png" alt="Google plus"></a>
+                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-mail.png" alt="Mail"/></a>
+                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="Facebook"/></a>
+                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="Twitter"/></a>
+                            <a href="#"><img class="social" src="${staticPath}/img/icon/icon-google.png" alt="Google plus"/></a>
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@
                     <a class="pull-left" href="#">
 
                         <!--article image-->
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-1.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-1.png" alt="miniature-article"/>
 
                     </a>
                     <div class="media-body">
@@ -185,63 +185,63 @@
                 </div>
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-7.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-7.png" alt="miniature-article"/>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">Who Uses Graphic Designs</h4>
                         <p class="article-category">Graphic design</p>
                         <p class="article-date">05 sep 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
+                        <p class="article-description"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
                     </div>
                 </div>
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-3.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-3.png" alt="miniature-article"/>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">How Responsive is awesome</h4>
                         <p class="article-category">Web design</p>
                         <p class="article-date">02 sep 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
+                        <p class="article-description"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
                     </div>
                 </div>
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-4.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-4.png" alt="miniature-article"/>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">The Complete Guide to Websites</h4>
                         <p class="article-category">Web design</p>
                         <p class="article-date">30 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
+                        <p class="article-description"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
                     </div>
                 </div>
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-2.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-2.png" alt="miniature-article"/>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">5 Ideas for your Logotypes</h4>
                         <p class="article-category">Logotype</p>
                         <p class="article-date">23 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
+                        <p class="article-description"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
                     </div>
                 </div>
                 <div class="media">
                     <a class="pull-left" href="#">
-                        <img class="media-object" src="${staticPath}/img/blog/article-min-6.png" alt="miniature-article">
+                        <img class="media-object" src="${staticPath}/img/blog/article-min-6.png" alt="miniature-article"/>
                     </a>
                     <div class="media-body">
                         <h4 class="media-heading">The Only Responsive Resources</h4>
                         <p class="article-category">Web design</p>
                         <p class="article-date">10 aug 2013</p>
-                        <p class="article-description">Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
+                        <p class="article-description"/>Comitem generum supergressa idem reginae flagrans formula fines fines pretioso occideretur cuiusdam eius nefanda monili iam autem nullo Clematius
                     </div>
                 </div>
             </section>
             <a class="btn btn-default btn-lg btn-block load-more">Load more</a>
             <a class="btn btn-block scroll-top visible-xs">
-                <img src="${staticPath}/img/icon/icon-chevron.png" alt="Scroll top">
+                <img src="${staticPath}/img/icon/icon-chevron.png" alt="Scroll top"/>
             </a>
         </div>
     </div>

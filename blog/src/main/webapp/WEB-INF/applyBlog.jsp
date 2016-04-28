@@ -8,7 +8,7 @@
 <html class="no-js"> <!--<![endif]-->
 <head>
     <title>Blog - Eldun Malosanu</title>
-    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png">
+    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png"/>
 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <!-- 配置文件 -->

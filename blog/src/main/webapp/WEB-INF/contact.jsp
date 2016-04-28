@@ -5,13 +5,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Contact - Eldun Malosanu</title>
-    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <!-- Bootstrap -->
-    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen">
+    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +40,8 @@
                         <a href="${ctx}/contact.html">contact</a>
                     </li>
                     <li class="last">
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"></a>
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"/></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"/></a>
                     </li>
                 </ul>
             </nav>
@@ -57,13 +57,13 @@
                         <h1>Contact</h1>
                         <h1 class="spacer">___</h1>
                         <p>Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existim.</p>
-                        <hr>
+                        <hr/>
                         <div class="panel panel-default contact btn-footer">
                             <div class="panel-body">
                                 <form role="form">
                                     <div class="form-group">
                                         <label for="contactEmail">Email address</label>
-                                        <input type="email" class="form-control" id="contactEmail">
+                                        <input type="email" class="form-control" id="contactEmail"/>
                                     </div>
                                     <div class="form-group">
                                         <label for="contactMessage">Message</label>
@@ -91,7 +91,7 @@
                                 <a href="#">
 
                                     <!--your image-->
-                                    <img class="img-responsive item-img" src="${staticPath}/img/contact/avatar-contact.jpg" alt="Avatar">
+                                    <img class="img-responsive item-img" src="${staticPath}/img/contact/avatar-contact.jpg" alt="Avatar"/>
 
                                 </a>
                             </div>
@@ -105,14 +105,14 @@
 
                                 <!--your descritpion / why should we contact you-->
                                 <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri, quicquid increpuisset, ad salutis suae dispendium existim.</p>
-                                <hr>
+                                <hr/>
 
                                 <!--social networks-->
                                 <div class="item-social text-center">
-                                    <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="Facebook"></a>
-                                    <a href="#"><img class="social bis" src="${staticPath}/img/icon/icon-twitter.png" alt="Twitter"></a>
-                                    <a href="#"><img class="social" src="${staticPath}/img/icon/icon-google.png" alt="Google plus"></a>
-                                    <a href="#"><img class="social bis" src="${staticPath}/img/icon/icon-linkedin.png" alt="Linkedin"></a>
+                                    <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="Facebook"/></a>
+                                    <a href="#"><img class="social bis" src="${staticPath}/img/icon/icon-twitter.png" alt="Twitter"/></a>
+                                    <a href="#"><img class="social" src="${staticPath}/img/icon/icon-google.png" alt="Google plus"/></a>
+                                    <a href="#"><img class="social bis" src="${staticPath}/img/icon/icon-linkedin.png" alt="Linkedin"/></a>
                                 </div>
 
                             </div>

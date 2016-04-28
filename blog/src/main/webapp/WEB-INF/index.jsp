@@ -5,13 +5,13 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Welcome To My Portfolio - Eldun Malosanu</title>
-    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" href="${staticPath}/img/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <!-- Bootstrap -->
-    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen">
+    <link href="${staticPath}/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="${staticPath}/css/style.css" rel="stylesheet" media="screen"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-sm-5 col-right">
             <nav>
-                <ul class="list-inline" id="menu">c
+                <ul class="list-inline" id="menu">
                     <li class="active">
                         <a href="${ctx}/index.html">work</a>
                     </li>
@@ -40,8 +40,8 @@
                         <a href="${ctx}/contact.html">contact</a>
                     </li>
                     <li class="last">
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"></a>
-                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-facebook.png" alt="facebook"/></a>
+                        <a href="#"><img class="social" src="${staticPath}/img/icon/icon-twitter.png" alt="twitter"/></a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
                         <div class="col-lg-12">
 
                             <!--activity image-->
-                            <img class="img-responsive" src="${staticPath}/img/image-home-2.jpg" alt="Project header">
+                            <img class="img-responsive" src="${staticPath}/img/image-home-2.jpg" alt="Project header"/>
 
                             <!--activity title -->
                             <h1>hello i'm a freelance web designer</h1>
@@ -82,7 +82,7 @@
                 <a href="#" class="filter" data-filter="web-design"> Web design</a>
                 <a href="#" class="filter" data-filter="print"> Print</a>
                 <a href="#" class="filter" data-filter="illustration">Illustration</a>
-                <hr>
+                <hr/>
             </div>
 
             <section class="row" id="Grid">
@@ -93,7 +93,7 @@
                             <a href="project-example.html">
 
                                 <!--work image-->
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-1.png" alt="Work 1">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-1.png" alt="Work 1"/>
 
                             </a>
                         </div>
@@ -107,7 +107,7 @@
 
                             <!--work short description-->
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
 
                             <!--work tags-->
                             <p class="item-tags">
@@ -124,14 +124,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-6.jpg" alt="Work 2">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-6.jpg" alt="Work 2"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Web design</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -144,14 +144,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-3.png" alt="Work 3">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-3.png" alt="Work 3"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Illustration</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -164,14 +164,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-4.png" alt="Work 4">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-4.png" alt="Work 4"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Logotype</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -184,14 +184,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-5.png" alt="Work 5">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-5.png" alt="Work 5"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Logotype</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -204,14 +204,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-9.jpg" alt="Work 6">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-9.jpg" alt="Work 6"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Web design</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -224,14 +224,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-7.png" alt="Work 7">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-7.png" alt="Work 7"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Branding</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -244,14 +244,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-8.png" alt="Work 8">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-8.png" alt="Work 8"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Poster</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -264,14 +264,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-2.png" alt="Work 9">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-2.png" alt="Work 9"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Logotype</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -284,14 +284,14 @@
                     <div class="panel panel-default item">
                         <div class="panel-heading">
                             <a href="project-example.html">
-                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-10.png" alt="Work 10">
+                                <img class="img-responsive item-img" src="${staticPath}/img/work/projet-example-10.png" alt="Work 10"/>
                             </a>
                         </div>
                         <div class="panel-body">
                             <a href="project-example.html"><h4 class="item-title">Project Title</h4></a>
                             <p class="item-category">Logotype</p>
                             <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
-                            <hr>
+                            <hr/>
                             <p class="item-tags">
                                 <a href="#">illustration</a> ,
                                 <a href="#">graphic design</a> ,
@@ -302,7 +302,7 @@
                 </div>
             </section>
             <a class="btn btn-block scroll-top visible-xs">
-                <img src="${staticPath}/img/icon/icon-chevron.png" alt="Scroll top">
+                <img src="${staticPath}/img/icon/icon-chevron.png" alt="Scroll top"/>
             </a>
         </div>
     </div>
